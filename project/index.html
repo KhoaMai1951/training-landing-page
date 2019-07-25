@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        $(document).ready(function () {
+            // Add active class to the current button (highlight it)
+            $("#group-btn > .btn").click(function () {
+                $("#group-btn > .btn").removeClass("active");
+                $(this).addClass("active");
+            });
+
+            $("li").find("a").click(function (e) {
+                e.preventDefault();
+                var section = $(this).attr("href");
+                $("html, body").animate({
+                    scrollTop: $(section).offset().top
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="header">
+        <div class="language container">
+            <div class="row">
+                <div class="language-content col-9 my-auto">LOREM IPSUM DOLOR SIT AMET. CONSECTETUR ADIPISCING ELIT
+                </div>
+                <!--Language Flag-->
+                <div class="language-flag col-3">
+                    <div class="row" id="group-btn">
+                        <button type="button" class=" active btn btn-primary ml-auto col-4 p-0"><img
+                                src="https://hvcgtraining.github.io/stickupzz/project/dist/assets/images/Layer-1.png">
+                        </button>
+                        <button type="button" class=" btn btn-primary col-4 p-0" style="margin-left: 1rem;"><img
+                                src="https://hvcgtraining.github.io/stickupzz/project/dist/assets/images/Layer-1.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-md bg-white navbar-light"
+                style="padding-left: 1rem; padding-right: 1rem; background-color: white!important; ">
+                <a class="navbar-brand" href="#" style="padding-top: 1rem;">
+                    <img src="https://hvcgtraining.github.io/stickupzz/project/dist/assets/images/Untitled-9.jpg">
+                </a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section1">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section2">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sectionSignUp">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section id="section1" data-scroll-spy="section">
+        <!-- What is Lorem Ipsum-->
+        <div class="container p-0">
+            <div class="row"
+                style="background: #F5F8FD; padding-left: 4rem; padding-right: 4rem; padding-bottom: 1rem; padding-top: 6rem;">
+                <div class="col-lg-6 col-sm-12">
+                    <img style="width: 100%"
+                        src="https://hvcgtraining.github.io/stickupzz/project/dist/assets/images/Layer-9.png">
+                </div>
+                <!-- my-auto to set content vertical align inside div-->
+                <div class="col-lg-6 col-sm-12 my-auto">
+                    <h1 style="padding-bottom: 2rem;">What is Lorem Ipsum?</h1>
+                    <p style="padding-bottom: 1rem;">Lorem Ipsum Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Inventore
+                        delectus
+                        ipsum
+                        aliquam, praesentium error necessitatibus enim itaque quis! Ad doloribus maxime optio at,
+                        aliquam
+                        magni itaque adipisci voluptates quae cumque?</p>
+                    <button id="btn-read-more" type="button" class="btn btn-outline-primary">READ MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Who are we? -->
+        <div class="container p-0" style="margin-bottom: 2rem;">
+            <div class="row" style="padding-left: 4rem; padding-right: 4rem;">
+                <div class="col-lg-12 col-sm-12 text-center" style="margin: 3rem 0;">
+                    <h2 style="font-size: 1.5rem; font-weight: bold;">Who Are We</h2>
+                    <p style="color: #068CC9;">ABOUT US</p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="paragraph" style="margin-bottom: 2rem; padding-right: 4rem;">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore voluptates officiis
+                            deleniti
+                            ad, commodi molestiae asperiores cupiditate praesentium ipsum necessitatibus, repellat eum
+                            voluptatum exercitationem? Dolorum possimus doloribus provident voluptates.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore voluptates officiis
+                            deleniti
+                            ad, commodi molestiae asperiores cupiditate praesentium ipsum necessitatibus.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore voluptates officiis
+                            deleniti
+                            ad, commodi molestiae asperiores cupiditate praesentium ipsum necessitatibus, repellat eum
+                            voluptatum exercitationem?</p>
+                    </div>
+                    <div style="padding-bottom: 2rem;">
+                        <button type="button" class="btn btn-primary" id="btn-read-more-2">Read More</button>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <video autoplay="autoplay" loop="loop" style="width: 100%; height: 100%;">
+                        <source src="https://hvcgtraining.github.io/stickupzz/project/dist/assets/images/video.mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What we offer -->
+    <div class="container p-0" style="background:#F5F5F5;" id="section2">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 text-center" style="margin-top: 3rem; margin-bottom: 1rem;">
+                <h2 style="font-size: 1.5rem; font-weight: bold;">What We Offer</h2>
+                <p style="color: #068CC9;">SERVICES</p>
+            </div>
+            <!--Cards-->
+            <div class="cards">
+                <div class="row">
+                    <!-- Card-->
+                    <div class="col-lg-3 col-md-6 col-sm-12 job-card">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://hvcgtraining.github.io/stickupzz/project/dist/assets/images/113.jpg"
+                                alt="Card image cap">
+                            <div
+                                class="card-body d-inline-flex p-2 bd-highlight justify-content-center align-items-center">
+                                <h5 class="card-title">Look for job</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card-->
+                    <div class="col-lg-3 col-md-6 col-sm-12 job-card">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://hvcgtraining.github.io/stickupzz/project/dist/assets/images/113.jpg"
+                                alt="Card image cap">
+                            <div
+                                class="card-body d-inline-flex p-2 bd-highlight justify-content-center align-items-center">
+                                <h5 class="card-title">Look for job</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card-->
+                    <div class="col-lg-3 col-md-6 col-sm-12 job-card">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://hvcgtraining.github.io/stickupzz/project/dist/assets/images/113.jpg"
+                                alt="Card image cap">
+                            <div
+                                class="card-body d-inline-flex p-2 bd-highlight justify-content-center align-items-center">
+                                <h5 class="card-title">Look for job</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card-->
+                    <div class="col-lg-3 col-md-6 col-sm-12 job-card">
+                        <div class="card" style="background: white !important;">
+                            <img class="card-img-top"
+                                src="https://hvcgtraining.github.io/stickupzz/project/dist/assets/images/113.jpg"
+                                alt="Card image cap">
+                            <div
+                                class="card-body d-inline-flex p-2 bd-highlight justify-content-center align-items-center">
+                                <h5 class="card-title">Look for job</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How to use -->
+    <div class="container " style="background:#F5F5F5; padding-bottom: 6rem;" id="sectionSignUp">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 text-center" style="margin: 3rem 0;">
+                <h2 style="font-size: 1.5rem; font-weight: bold;">How To Use</h2>
+                <p style="color: #068CC9;">FORM</p>
+            </div>
+            <!--Form-->
+            <div class="col-lg-12 col-sm-12 p-0">
+                <div class="form-signup shadow p-4 mb-4 bg-white">
+                    <h3 style="padding-top: 2rem;">Stick Me Upz</h3>
+                    <div class="form" style="padding-top: 4rem; padding-bottom: 1rem;">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail">Email*</label>
+                                <input type="email"
+                                    class="form-control border-secondary border-top-0 border-left-0 border-right-0"
+                                    id="inputEmail">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPhone">Phone*</label>
+                                <input type="number"
+                                    class="form-control border-secondary border-top-0 border-left-0 border-right-0"
+                                    id="inputPhone">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputFirstName">First Name*</label>
+                                <input type="text"
+                                    class="form-control border-secondary border-top-0 border-left-0 border-right-0"
+                                    id="inputFirstName">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputLastName">Last Name*</label>
+                                <input type="text"
+                                    class="form-control border-secondary border-top-0 border-left-0 border-right-0"
+                                    id="inputLastName">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center" style="margin-top: 1.6rem;">
+                            <button type="button" class="btn btn-primary" id="btn-read-more-2">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <h2>STICK UPZ</h1>
+            <p>Just one click, stick your name on the map</p>
+            <a href="#" class="fa fa-facebook "></a>
+            <a href="#" class="fa fa-twitter "></a>
+            <a href="#" class="fa fa-linkedin "></a>
+            <a href="#" class="fa fa-instagram "></a>
+            <p>Coppyright@2019 Stickupz. All rights reserved</p>
+    </footer>
+</body>
+
+</html>

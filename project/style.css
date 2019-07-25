@@ -1,0 +1,193 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.language {
+  background: #007dc6;
+  padding: 0.4rem 1rem;
+}
+
+.language-content {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.navbar {
+  padding: 0rem;
+  margin-bottom: 0rem;
+}
+
+.dropdown .dropdown-menu {
+  border-radius: 0;
+}
+
+/* Medium devices (tablets, 768px and up) 
+The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border-radius: 0;
+  }
+}
+
+.row {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.jumbotron {
+  margin-top: 0rem;
+}
+
+.btn {
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn-outline-primary {
+  color: white !important;
+}
+
+#btn-read-more {
+  background: white;
+
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#btn-read-more:hover {
+  color: white;
+  background: #007dc6;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#btn-read-more-2:hover {
+  background: white;
+  color: #007dc6;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.cards {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+
+.card-title {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.job-card {
+  padding-bottom: 1rem;
+}
+
+.form-signup {
+  background: white;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: #007bff;
+  padding: 1rem;
+}
+
+.fa-facebook {
+  background: #007bff;
+  color: white;
+}
+
+.fa-twitter {
+  background: #007bff;
+  color: white;
+}
+
+.fa-instagram {
+  background: #007bff;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bff;
+  color: white;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.fa {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.5rem !important;
+  width: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar-nav.justify-content-center.w-100.bg-secondary.px-3 li a {
+  color: #007bff;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #007bff;
+}
+
+.language-flag-block {
+  border: solid white 0.1rem;
+  border-radius: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #007bff;
+  font-size: 1.3rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: white;
+}
+.btn.active {
+  background: #9fceeb !important;
+}
+
+button {
+  background: #007dc6 !important;
+  border-color: white !important;
+}
+
+.navbar-nav > li.nav-item > a.nav-link {
+  color: #9fceeb !important;
+}
+
+.navbar-nav > li.nav-item > a.nav-link.active {
+  color: #007dc6 !important;
+  border-bottom: 3px solid #007dc6;
+  transition: 0.3s;
+}
+
+.nav-item {
+  padding-left: 1.3rem;
+}
